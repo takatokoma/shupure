@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+/****** 共通基本設定
+******************************************************/
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: #fff;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 外枠・コンテンツ中央設定  */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* ヘッダー */
+.header-top {
+  margin-bottom: 40px;
+}
+.header-top img {
+  width: 100%;
+  margin: 0 auto;
+}
+.header-top h1 {
+  margin: 0 0 0 10px;
+  height: 20px;
+  font-size: 12px;
+  color: #3e3e3e;
+}
+
+/* ナビゲーション */
+.navigation-main {
+  width: 100%;
+}
+.navigation-main ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.navigation-main li {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+.navigation-main a:link {
+  color: #3e3e3e;
+  text-decoration: none;
+}
+.navigation-main a:visited {
+  color: #3e3e3e;
+}
+.navigation-main a:hover {
+  color: #7b7b7b;
+}
+
+/* コンテンツエリア設定 */
+.main-content {
+  width: 960px;
+}
+.main-content h2 {
+  font-size: 42px;
+  color: #3e3e3e;
+  font-weight: normal;
+}
+.main-content p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* フッター */
+.footer {
+  width: 960px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: dotted 1px #3e3e3e;
+}
+.footer .footer-info {
+  width: 30%;
+}
+.footer .footer-info h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .footer-info ul {
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+.footer .navigation-footer {
+  width: 30%;
+}
+.footer .navigation-footer small {
+  position: relative;
+  top: 40%;
+  color: #3e3e3e;
+}
+.footer .navigation-footer ul {
+  list-style: none;
+}
+.footer .navigation-footer li {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #3e3e3e;
+  font-weight: bold;
+  text-align: right;
+}
+.footer .navigation-footer a:link {
+  color: #3e3e3e;
+  text-decoration: none;
+}
+.footer .navigation-footer a:visited {
+  color: #3e3e3e;
+}
+.footer .navigation-footer a:hover {
+  color: #7b7b7b;
+}
+
+/****** index.html用
+******************************************************/
+/* メインコンテンツエリア */
+.items-reverse {
+  width: 960px;
+  margin: auto;
+}
+.items-reverse .item {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0 100px 0;
+}
+.items-reverse .item:nth-child(odd) {
+  /* 奇数番目を入替・偶数番目はeven */
+  flex-direction: row-reverse;
+}
+.items-reverse .item-img {
+  width: 48%;
+}
+.items-reverse .item-img img {
+  width: 100%;
+}
+.items-reverse .item-body {
+  width: 48%;
+}
+
+/* ニュースエリア */
+.news {
+  margin: 0 auto 100px auto;
+  width: 800px;
+}
+.news h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+.news ul {
+  list-style-type: none;
+}
+.news ul li {
+  font-size: 20px;
+  color: #3e3e3e;
+}
+
+/****** menu.html用
+******************************************************/
+.menu {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu-img {
+  width: 50%;
+  height: auto;
+}
+.menu-img img {
+  width: 100%;
+}
+.menu-nav {
+  width: 50%;
+}
+.menu-nav ul {
+  margin-bottom: -5px;
+  list-style: none;
+}
+.menu-nav ul li {
+  padding-top: 10px;
+  list-style: none;
+  font-size: 24px;
+}
+.menu-nav a:link {
+  color: #3e3e3e;
+  text-decoration: none;
+}
+.menu-nav a:visited {
+  color: #3e3e3e;
+}
+.menu-nav a:hover {
+  color: #7b7b7b;
+}
+.menu-main {
+  margin: 100px 0;
+  text-align: center;
+}
+.menu-main ul {
+  margin-left: 0;
+  list-style-type: none;
+}
+.menu-main ul li {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/****** アクセスページ
+******************************************************/
+.map {
+  margin-bottom: 40px;
+}
+.tablestyle iframe {
+  margin-bottom: 40px;
+}
+
+/****** コンタクトページ
+******************************************************/
+.contact-form {
+  margin-bottom: 50px;
+}
+/* お問い合わせフォーム */
+form {
+  width: 100%;
+}
+form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+}
+form li {
+  padding: 6px;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+form li#send {
+  background: none;
+  margin-top: 6px;
+}
+form label {
+  width: 20%;
+}
+form input,
+form textarea {
+  width: 70%;
+  padding: 20px;
+  border: 1px solid #3f312b;
+  border-radius: 4px;
+  font-size: 16px;
+}
+form input:focus,
+form textarea:focus {
+  border: 1px solid #3f312b;
+  background: #d8ccc6;
+}
+form li#send button {
+  width: 20%;
+  padding: 10px 0;
+  background: #3f312b;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+form li#send button:hover {
+  background-color: #7c6a62;
+}
